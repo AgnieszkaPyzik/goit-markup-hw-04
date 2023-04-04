@@ -1,1 +1,1 @@
-https://agnieszkapyzik.github.io/goit-markup-hw-04/
+https://agnieszkapyzik.github.io/ggoit-markup-hw-04/
