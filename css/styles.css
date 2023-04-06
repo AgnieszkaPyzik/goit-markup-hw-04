@@ -277,3 +277,14 @@ footer {
 .link-footer {
   padding: 20px 15px 60px 0;
 }
+.icon-list {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.icon-clients {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  }
