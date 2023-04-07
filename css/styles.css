@@ -109,15 +109,33 @@ figure {
 }
 .link-nav {
   color: var(--brand-color);
+  padding-left: 10px;
 }
 .link-data {
   color: var(--pharagraph-color);
+  padding-left: 10px;
 }
 .link-nav:hover,
 .link-nav:focus,
 .link-data:hover,
 .link-data:focus {
   color: var(--theme-color);
+}
+.icon-data-1:hover,
+.icon-data-1:focus,
+.icon-link-1:hover,
+.icon-link-1:focus {
+  fill: #2196f3;
+}
+.icon-data-1 {
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+}
+.icon-link-1 {
+  width: 10px;
+  height: 16px;
+  fill: #757575;
 }
 .main-content {
   display: flex;
@@ -175,16 +193,37 @@ figure {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.1;
+  padding-top: 30px;
+}
+.lorem-icons-1 {
+  background-color: var(--background-color);
+  border-radius: 4px;
+  padding: 0 102.35px;
+}
+.lorem-icons-2 {
+  background-color: var(--background-color);
+  border-radius: 4px;
+  padding: 0 101.54px 0 101.5px;
+}
+.lorem-icons-3 {
+  background-color: var(--background-color);
+  border-radius: 4px;
+  padding: 0 100px;
+}
+.lorem-icons-4 {
+  background-color: var(--background-color);
+  border-radius: 4px;
+  padding: 0 115.17px 0 100px;
 }
 .lorem-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0px;
+  flex-basis: calc((100%-60px) / 4);
+  gap: 30px;
   padding: 0;
 }
 .item {
-  flex-basis: calc((100%-60px) / 4);
-  gap: 30px;
+  display: inline-block;
+  justify-content: space-between;
 }
 .lorem-text {
   font-size: 14px;
@@ -229,6 +268,13 @@ figure {
 .role {
   line-height: 1.2;
   padding-top: 10px;
+  padding-bottom: 16px;
+}
+.icon-social {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  gap: 10px;
   padding-bottom: 30px;
 }
 .box {
@@ -287,4 +333,4 @@ footer {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  }
+}
