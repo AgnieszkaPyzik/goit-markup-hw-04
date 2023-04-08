@@ -126,17 +126,7 @@ figure {
 .icon-data-1:focus,
 .icon-link-1:hover,
 .icon-link-1:focus {
-  fill: #2196f3;
-}
-.icon-data-1 {
-  width: 16px;
-  height: 12px;
-  fill: #757575;
-}
-.icon-link-1 {
-  width: 10px;
-  height: 16px;
-  fill: #757575;
+  color: var(--theme-color);
 }
 .main-content {
   display: flex;
@@ -146,8 +136,11 @@ figure {
   gap: 30px;
 }
 .group-1 {
+  background-image: url(/images/overlay.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #2f303a;
-}
+  }
 .group-4 {
   background-color: var(--background-color);
 }
@@ -368,6 +361,10 @@ footer {
 color-scheme: #2196F3;
 border-color: #2196F3;
 }
+.footer-list {
+  display:flex;
+  column-gap: 70px;
+}
 .footer-social {
 color: var(--light-color);
 font-weight: 700;
@@ -376,14 +373,15 @@ line-height: 1.1;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 font-style: normal;
-margin-bottom: 20px;
+padding-bottom: 20px;
 }
 .footer-social-list {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 .footer-social-icon {
   fill: var(--light-color);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1); 
   border-radius: 50%;
 }
