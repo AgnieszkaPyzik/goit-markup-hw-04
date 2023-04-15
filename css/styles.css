@@ -33,7 +33,9 @@ ul {
 a {
   text-decoration: none;
 }
-button {
+button,
+.icon-media,
+.footer-social-icon {
   cursor: pointer;
 }
 body {
@@ -140,7 +142,7 @@ figure {
   gap: 30px;
 }
 .group-1 {
-  background-image: url(/images/overlay.jpg);
+  background-image: url(../images/overlay.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #2f303a;
@@ -219,10 +221,6 @@ figure {
   gap: 30px;
   padding: 0;
 }
-.item {
-  display: inline-block;
-  justify-content: space-between;
-}
 .lorem-text {
   font-size: 14px;
   line-height: 1.7;
@@ -275,15 +273,15 @@ figure {
 }
 .icon-media {
   background-color: #ffffff;
-  border-radius: 50%;
   padding: 12px;
 }
 .icon-media:hover,
 .icon-media:focus {
+  width: 44px;
+  height: 44px;
   background-color: #2196f3;
-  color: var(--light-color);
+  fill: #FFFFFF;
   border-radius: 50%;
-  cursor: pointer;
 }
 .box {
   background: #ffffff;
@@ -333,6 +331,8 @@ footer {
 }
 .end-body {
   padding-top: 60px;
+  display: flex;
+  column-gap: 70px;
 }
 .link-footer {
   padding: 20px 15px 60px 0;
@@ -343,48 +343,25 @@ footer {
   justify-content: space-between;
   gap: 30px;
 }
-.icon-clients-1 {
-  padding: 24.71px 65px 20.58px 64px;
+.icon {
+  display:block;
+  margin: 23px auto;
+  justify-content: center;
+  text-align:center ;
 }
-.icon-clients-2 {
-  padding: 20.71px 65px 19.29px 65px;
-}
-.icon-clients-3 {
-  padding: 24.7px 64.86px 26.12px 61.68px;
-}
-.icon-clients-4 {
-  padding: 24.7px 42.56px 26.68px 43px;
-}
-.icon-clients-5 {
-  padding: 22.77px 53.46px 23.8px 54px;
-}
-.icon-clients-6 {
-  padding: 22.77px 38.21px 25.31px 38px;
-}
-.icon-clients-1,
-.icon-clients-2,
-.icon-clients-3,
-.icon-clients-4,
-.icon-clients-5,
-.icon-clients-6 {
+.icon-clients {
+  height: 92px;
+  width: 170px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
+  margin: auto;
 }
-.icon:hover,
-.icon-clients-1:hover,
-.icon-clients-2:hover,
-.icon-clients-3:hover,
-.icon-clients-4:hover,
-.icon-clients-5:hover,
-.icon-clients-6:hover {
-  fill: var(--theme-color);
+.icon-clients:hover,
+.icon:hover {
   border-color: var(--theme-color);
-  cursor: pointer;
-}
-.footer-list {
-  display: flex;
-  column-gap: 70px;
+  color: var(--theme-color);
+  fill: var(--theme-color);
 }
 .footer-social {
   color: var(--light-color);
@@ -402,14 +379,16 @@ footer {
   gap: 10px;
 }
 .footer-social-icon {
+  width: 44px;
+  height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
+  fill:#FFFFFF;
   border-radius: 50%;
   padding: 12px;
 }
 .footer-social-icon:hover,
-.footer-social-icon:focus {
+.footer-social-icon:focus { 
   background-color: #2196f3;
-  color: var(--light-color);
+  fill: var(--light-color);
   border-radius: 50%;
-  cursor: pointer;
 }
