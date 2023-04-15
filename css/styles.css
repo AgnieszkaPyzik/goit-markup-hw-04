@@ -217,7 +217,7 @@ figure {
 }
 .lorem-list {
   display: flex;
-  flex-basis: calc((100%-60px) / 4);
+  flex-basis: calc((100%-90px) / 4);
   gap: 30px;
   padding: 0;
 }
@@ -233,21 +233,11 @@ figure {
   justify-content: space-between;
   padding-top: 50px;
 }
-.images-product {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .persons-list {
   display: flex;
   gap: 30px;
   justify-content: space-between;
   padding-top: 50px;
-}
-.images-persons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .person-box {
   background: var(--light-color);
@@ -274,11 +264,11 @@ figure {
 .icon-media {
   background-color: #ffffff;
   padding: 12px;
+  width: 44px;
+  height: 44px;
 }
 .icon-media:hover,
 .icon-media:focus {
-  width: 44px;
-  height: 44px;
   background-color: #2196f3;
   fill: #FFFFFF;
   border-radius: 50%;
@@ -382,7 +372,7 @@ footer {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
-  fill:#FFFFFF;
+  color:#FFFFFF;
   border-radius: 50%;
   padding: 12px;
 }
