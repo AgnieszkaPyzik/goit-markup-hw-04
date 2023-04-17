@@ -134,13 +134,11 @@ figure {
   fill: var(--pharagraph-color);
   margin-right: 10px;
 }
-a.link-data > .icon-data-1:hover,
 .link-nav:hover,
 .link-nav:focus,
 .link-data:hover, 
-.link-data:focus,
-.icon-data-1:hover,
-.icon-data-1:focus {
+.link-data:focus {
+  --pharagraph-color: var(--theme-color);
   color: var(--theme-color);
   fill: var(--theme-color);
 }
@@ -156,9 +154,6 @@ a.link-data > .icon-data-1:hover,
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #2f303a;
-}
-.group-3 {
-  padding-top: 0;
 }
 .group-4 {
   background-color: var(--background-color);
@@ -213,17 +208,20 @@ a.link-data > .icon-data-1:hover,
   height: 120px;
   background-color: var(--background-color);
   border-radius: 4px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 .lorem-list {
-  display: flex;
-  flex-basis: calc((100%-90px) / 4);
-  gap: 30px;
-  align-content: space-between;
+  display: inline-flex;
+  flex-basis: calc((100%-60px) / 4);
+  justify-content: space-around;
+  margin: 0 auto;
+  gap: 30px; 
 }
 .lorem-text {
+  width: 270px;
+  height: 75px;
   font-size: 14px;
   line-height: 1.7;
   margin-top: 10px;
@@ -263,7 +261,7 @@ a.link-data > .icon-data-1:hover,
   padding-bottom: 30px;
 }
 .icon-media {
-  background-color: #ffffff;
+  background-color: var(--light-color);
   display: flex;
   flex-basis: calc((100%-40px) / 4);
   gap: 10px;
@@ -277,7 +275,7 @@ a.link-data > .icon-data-1:hover,
 .icon-media:hover,
 .icon-media:focus,
 .icon-media svg:hover {
-  background-color: Var(--theme-color);
+  background-color: var(--theme-color);
   fill: var(--light-color);
   }
 .box {
@@ -332,7 +330,8 @@ footer {
   column-gap: 70px;
 }
 .link-footer {
-  padding: 20px 15px 60px 0;
+  padding-bottom: 9px;
+  margin: 20px 15px 60px 0;
 }
 .icon-list {
   padding-top: 50px;
@@ -354,6 +353,7 @@ footer {
 .icon-clients:focus,
 .icon-clients svg:hover,
 .icon-clients svg:focus {
+  --icon-color: var(--theme-color);
   border-color: var(--theme-color);
   color: var(--theme-color);
   fill: var(--theme-color);
