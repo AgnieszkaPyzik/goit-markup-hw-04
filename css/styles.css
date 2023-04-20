@@ -355,6 +355,7 @@ footer {
   color: var (--theme-color);
 }
 .end-body {
+  display: flex;
   padding-top: 60px;
   column-gap: 70px;
 }
@@ -364,7 +365,7 @@ footer {
 .footer-social {
   text-transform: uppercase;
   font-style: normal;
-  padding-bottom: 20px;
+  padding: 12px 0 20px 0;
 }
 .footer-social-list {
   display: flex;
