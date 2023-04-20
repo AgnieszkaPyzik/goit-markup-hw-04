@@ -111,7 +111,7 @@ figure {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 30px;
+  column-gap: 46px;
 }
 .link-nav,
 .link-data {
@@ -123,7 +123,6 @@ figure {
 }
 .link-nav {
   color: var(--brand-color);
-  padding-left: 16px;
 }
 .link-data {
   display: inline-flex;
@@ -170,6 +169,7 @@ padding-top: 0;
   border-radius: 4px;
   letter-spacing: 0.06em;
   padding: 10px 41px 10px 42px;
+  margin-top: 30px;
 }
 .button-1st::first-letter {
   text-transform: uppercase;
@@ -226,14 +226,16 @@ padding-top: 0;
   margin-top: 10px;
 }
 .pictures-list {
-  display: flex;
+  display: inline-flex;
   flex-basis: calc((100%-60px) / 3);
+  justify-content: space-between;
   gap: 30px;
   padding-top: 50px;
 }
 .persons-list {
-  display: flex;
+  display: inline-flex;
   flex-basis: calc((100%-90px) / 4);
+  justify-content: space-between;
   gap: 30px;
   padding-top: 50px;
 }
@@ -305,10 +307,11 @@ padding-top: 0;
   padding-bottom: 20px;
 }
 .icon-list {
-  padding-top: 50px;
   display: inline-flex;
   flex-basis: calc((100%-150px) / 6);
+  justify-content: space-between;
   gap: 30px;
+  padding-top: 50px;
 }
 .icon-clients {
   display: flex;
@@ -372,15 +375,15 @@ footer {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
-  color: var(--light-color);
   border-radius: 50%;
   padding: 12px;
+}
+.footer-icon {
+  fill: var(--light-color);
 }
 .footer-social-icon:hover,
 .footer-social-icon:focus,
 .footer-social-icon svg:hover,
 .footer-social-icon svg:focus { 
   background-color: var(--theme-color);
-  fill: var(--light-color);
-  --icon-color: var(--light-color);
 }
